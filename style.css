@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    display: grid;
+    background: rgb(240, 19, 56);
+    
+}
+
+.navbar{
+    width: 85vw;
+    height: 5vw;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.363)
+    ;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    list-style: none;
+    align-self: center;
+    justify-self: center;
+}
+.na{
+    font-size: 3.5vw;
+    align-self: center;
+}
+
+
+.site_n{
+    padding-left: 2vw;
+    font-size: 5vw;
+}
+
+.nav_links{
+    color: white;
+    text-decoration: none;
+}
+
+.mobile{
+    display: none;
+}
+
+/* hover Effects */
+
+.nav_links:hover{
+    color: black;
+    transition: 0.5s;
+    
+}
+.nav_links .co:hover{
+    color: red;
+}
+
+
+/* content box */
+
+
+
+.content{
+    margin-top: 2vw;
+    border: 2px solid white;
+    width: 85vw;
+    height: 4vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    justify-self: center;
+    background-color: rgba(0, 0, 0, 0.363);
+
+}
+
+#city_name_label{
+    align-self: center;
+    justify-self: center;
+    color: white;
+    font-weight: 600;
+    font-size: 2vw;
+}
+
+#city_name{
+    width: 20vw;
+    height: 3vw;
+    align-self: center;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.116);
+    padding-left: 2vw;
+    font-size: 2.5vw;
+    font-weight: 400;
+}
+
+.check_weather{
+    width: 16vw;
+    height: 3vw;
+    align-self: center;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.555);
+    padding-left: 2vw;
+    font-size: 1.5vw;
+    font-weight: 400;
+    justify-self: center;
+    color: white;
+}
+
+.show{
+    width: 14vw;
+    height: 4vw;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.555);
+    align-self: center;
+    justify-self: center;
+    font-size: 2.5vw;
+    font-weight: 600;
+    border-radius: 27px;
+    color: white;
+
+}
+
+#date_time{
+    width: 20vw;
+    justify-self: center;
+    border: 2px solid black;
+    font-weight: 2vw;
+    font-weight: 600;
+    height: 2vw;
+    margin-bottom: 0px;
+    text-align: center;
+    padding-top: 3px;
+
+}
+
+.data{
+    margin-top: 1px;
+    width: 85vw;
+    height: 10vw;
+    border: 2px solid white;
+    color: white;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 1vw;
+    background-color: rgba(0, 0, 0, 0.555);
+}
+
+.m_d{
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+/* This is for the forcast section */
+
+.check_forcast{
+    width: 20vw;
+    height: 4vw;
+    border: 2px solid white;
+    justify-self: center;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.555);
+    color: white;
+    border-radius: 27px;
+}
+
+
+.days_of_for{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 2px solid white;
+    justify-self: center;
+    width: 85vw;
+    height: 10vw;
+    align-self: center;
+    justify-self: center;
+    background-color: rgba(0, 0, 0, 0.555);
+}
+
+.date_time_for{
+    width: 20vw;
+    justify-self: center;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.555);
+    font-weight: 2vw;
+    font-weight: 600;
+    height: 2vw;
+    margin-bottom: 0px;
+    text-align: center;
+    padding-top: 3px;
+}
+
+.other_days{
+    align-self: center;
+    justify-self: center;
+    display: none;
+    
+}
+
+.other_days_main{
+    display: grid;
+    margin-top: 1px;
+    width: 85vw;
+    height: 10vw;
+    color: white;
+    font-size: 1vw;
+    padding-bottom: 3vw;
+}
+
+.second{
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+.third{
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+.fourth{
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+.fifth{
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+.sixth{
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+.seventh{
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+
+
+/* For Phone Version Styles... */
+
+
+
+@media (max-width:600px){
+    body{
+        /* background-image: linear-gradient(45deg, red,pink,purple); */
+        background: rgb(43, 139, 250);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: auto;
+    }
+    .mobile{
+        margin-top: 1vw;
+        display:list-item;
+        width: 5vw;
+        height: 5vw;
+        position:absolute;
+        right: 55px;
+        border: 2px solid white;
+        background-color: red;
+        border-radius: 10px 0px 0px ;
+
+    }
+    .navbar{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 80vw;
+        height: auto;
+        justify-items: center;
+        border: 2px solid white;
+    }
+    .site_n{
+        padding-bottom: 10px;
+    }
+    .na{
+        display: none;
+    }
+
+    .content{
+        width: 80vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding-top: 3vw;
+        border-radius: 20px 0px 20px;
+    }
+    #city_name_label{
+        align-self: center;
+        padding-bottom: 3vw;
+        font-size: 4vw;
+    }
+    #city_name{
+        margin-bottom: 3vw;
+        width: 30vw;
+        height: 8vw;
+        color: black;
+        font-size: 3vw;
+        font-weight: 600;
+    }
+    .check_weather{
+        width: 25vw;
+        height: 8vw;
+        margin-bottom: 3vw;
+        font-size: 2.5vw;
+        font-weight: 600;
+    }
+    .show{
+        width: 20vw;
+        height: 8vw;
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+    #date_time{
+        width: 50vw;
+        height: 5vw;
+        font-size: 3vw;
+        margin-bottom: 3vw;
+
+    }
+
+    .data{
+        width: 80vw;
+        height: 35vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+    .m_d{
+        font-size: 3vw;
+        font-weight: 600;
+    }
+    .oo{
+        padding-top: 3vw;
+    }
+    .days_of_for{
+        width: 80vw;
+        height: 35vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+    .second{
+        padding-top: 3vw;
+        font-size: 3vw;
+        font-weight: 600;
+    }
+    .third{
+        padding-top: 3vw;
+        font-size: 3vw;
+        font-weight: 600;
+    }
+    .fourth{
+        padding-top: 3vw;
+        font-size: 3vw;
+        font-weight: 600;
+    }
+    .fifth{
+        padding-top: 3vw;
+        font-size: 3vw;
+        font-weight: 600;
+    }
+    .sixth{
+        padding-top: 3vw;
+        font-size: 3vw;
+        font-weight: 600;
+    }
+    .seventh{
+        padding-top: 3vw;
+        font-size: 3vw;
+        font-weight: 600;
+    }
+    .date_time_for{
+        margin-top: 3vw;
+        width: 50vw;
+        height: 5vw;
+        font-size: 3vw;
+        margin-bottom: 3vw;
+    }
+    .check_forcast{
+        margin-top: 3vw;
+        width: 35vw;
+        height: 10vw;
+        margin-bottom: 3vw;
+    }
+}
+  
+
+
